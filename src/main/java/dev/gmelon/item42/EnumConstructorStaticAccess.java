@@ -1,7 +1,5 @@
 package dev.gmelon.item42;
 
-import java.util.function.IntFunction;
-import java.util.function.Supplier;
 import java.util.stream.Stream;
 
 public enum EnumConstructorStaticAccess {
@@ -18,5 +16,6 @@ public enum EnumConstructorStaticAccess {
         Object[] array = Stream.of()
                 .map(a -> this.value)
                 .toArray();
+
     }
 }
